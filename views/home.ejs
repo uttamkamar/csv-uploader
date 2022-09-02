@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>CSV Home</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+		<link rel="stylesheet" type="text/css" href="/css/home.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="input-form">
+				<!--Form header-->
+				<header>CSV File Uploader</header>
+				<!--Input multipart form-->
+				<form class="form" action="/files/upload" id="myForm" method="POST" enctype="multipart/form-data">
+					<input class="inputfile" type="file" id="file" name="file" required />
+					<button type="submit" id="submit-form">Upload</button>
+				</form>
+			</div>
+			<!--End of input form div-->
+			<div id="files">
+				<div id="files-header">Uploaded Files</div>
+				<!-- list of uploaded files -->
+				<ul>
+					<%for(let file of files){%>
+					<div class="all-file">
+						<li>
+							<img src="/img/csv.jpg" style="width: 30px; height: 30px" /><a class="file_name" href="/files/<%=file._id%>">
+								<%=file.original_name%> &nbsp;
+								<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+							</a>
+						</li>
+						<a href="/files/<%=file._id%>/delete"><i class="fa-solid fa-trash"></i></a>
+					</div>
+					<%}%>
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="/js/home.js"></script>
+	</body>
+</html>

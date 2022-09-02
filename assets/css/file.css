@@ -1,0 +1,121 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+	--main-color: #191627;
+	--hover-color: #6e57e0;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	margin-top: 80px;
+}
+
+/* Search box */
+.searchBox {
+	margin: 1.2rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	margin-bottom: 40px;
+}
+
+.searchBox input {
+	padding: 0 1rem;
+	width: 40vw;
+	font-size: 1.1rem;
+	font-family: inherit;
+	outline: 0;
+	border: 1px solid var(--main-color);
+	color: var(--main-color);
+	border-top-left-radius: 2rem;
+	border-bottom-left-radius: 2rem;
+}
+.search-control::placeholder {
+	color: blue;
+}
+.search-btn {
+	width: 55px;
+	height: 55px;
+	font-size: 1.8rem;
+	background: var(--main-color);
+	color: white;
+	border: none;
+	border-top-right-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	transition: all 0.4s linear;
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+}
+
+/* Table */
+table {
+	width: 50vw;
+	display: grid;
+	place-items: center;
+	border-collapse: collapse;
+}
+
+th {
+	background-color: var(--main-color);
+	color: white;
+	padding: 0.5em;
+	height: 1.5rem;
+}
+
+td {
+	padding: 0.5rem;
+}
+th {
+	cursor: pointer;
+}
+th:hover {
+	background-color: var(--hover-color);
+	transition: background-color 0.3s ease-in-out;
+}
+th,
+td {
+	border: 0.5px solid var(--main-color);
+}
+/*End of table */
+
+/* Pagination */
+#page-numbers {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+.page {
+	background-color: var(--main-color);
+	color: white;
+	padding: 10px;
+	/* height: 1.5rem; */
+	min-width: 1.5rem;
+	margin-right: 10px;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.page:hover {
+	background-color: var(--hover-color);
+	transition: background-color 0.3s ease-in-out;
+}
+.sort-btn-asc {
+	cursor: pointer;
+}
+
+.sort-btn-desc {
+	cursor: pointer;
+}
+/*End of pagination */

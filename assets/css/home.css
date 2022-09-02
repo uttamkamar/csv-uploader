@@ -1,0 +1,112 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root {
+	--main-color: #00243d;
+	--secondary-color: #5b752e;
+	--hover-color: #c0d798;
+	--white: #ffffff;
+	--light-grey: #e0e0e0;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: var(--main-color);
+}
+
+.wrapper {
+	width: 530px;
+	background: var(--white);
+	border-radius: 5px;
+	padding: 30px;
+	box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+}
+.wrapper header {
+	color: var(--main-color);
+	font-size: 27px;
+	font-weight: 600;
+	text-align: center;
+}
+.wrapper form {
+	height: 167px;
+	display: flex;
+	cursor: pointer;
+	margin: 30px 0;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	border-radius: 5px;
+	border: 2px dashed var(--main-color);
+}
+input::file-selector-button {
+	/* font-weight: bold; */
+	color: var(--white);
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--secondary-color);
+}
+
+button {
+	background-color: var(--secondary-color);
+	border: none;
+	color: white;
+	padding: 10px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+button:hover {
+	/* background-color: var(--hover-color); */
+	color: var(--main-color);
+}
+div li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.file_name {
+	text-decoration: none;
+	font-weight: 500;
+	color: var(--main-color);
+	margin-left: 5px;
+}
+li .fa-arrow-up-right-from-square {
+	font-size: 15px;
+}
+
+.fa-trash {
+	font-size: 20px;
+}
+.fa-trash:hover {
+	color: var(--main-color);
+}
+
+div .all-file {
+	margin-bottom: 10px;
+	background: var(--hover-color);
+	list-style: none;
+	padding: 15px 20px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.all-file i {
+	color: var(--secondary-color);
+}
+.all-file li i:hover {
+	color: var(--main-color);
+}
