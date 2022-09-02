@@ -1,0 +1,11 @@
+First Name,College Name,Email Address,DSA Score,React Score,WebD Score,Node Score,Company,Date,Result
+uttam,GKCEM,uttam@gmail.com,98,70,99,97,Amazon,,Placed
+pranav,APC,pranav@gmail.com,70,68,78,97,,,On-Hold
+Dhiman,JU,dhiman@gmail.com,42,99,98,98,,,Failed
+Sanjay,IEM,suppu@gmail.com,84,84,84,84,Google,06-08-2022,Failed
+Samiran,IIT,samiran@gmail.com,76,76,76,76,Bharatpay,07-08-2022,Failed
+Kanu,TIU,kanu@gmail.com,59,59,59,59,Adobe,08-08-2022,On-Hold
+Puja,BIT,puja@gmail.com,70,70,70,70,Microsoft,09-08-2022,On-Hold
+Avilash,JIS,avilash@gmail.com,90,90,90,90,Tesla,10-08-2022,Failed
+Sriman,GNIT,sriman@gmail.com,89,89,89,89,AWS,11-08-2022,On-Hold
+Ninja,BU,ninja@gmail.com,64,64,64,64,phonepay,12-08-2022,FAIL
